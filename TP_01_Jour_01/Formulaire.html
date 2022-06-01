@@ -2,31 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="css/stylef.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
 </head>
 <body>
-<div>
-    <img src="images/mymusic_logo.png" alt="logo my music">
-</div>
+
+<header>
+
+    <div class="divlogo">
+        <div>
+            <img id="avatar" src="images/mymusic_logo.png" alt="logo my music" >
+        </div>
+
+        <div>
+            <h1>My music</h1>
+        </div>
+    </div>
+
+    <div class="divco">
+        <div>
+            <img  src="images/avatar-40x40.png" alt="avatar star wars">
+        </div>
+
+
+        <div>
+            <span >ENI, connecté</span>
+        </div>
+
+
+        <div>
+            <a  href="#moncompte">Mon compte</a> <span>|</span> <a href="#">Déconnexion</a>
+        </div>
+    </div>
+
+</header>
+<hr>
+
 
 <div>
-    <h1>My music</h1>
-</div>
-
-<div>
-    <img src="images/avatar-40x40.png" alt="avatar star wars">
-</div>
-
-<div>
-    <span>ENI, connecté</span> <br>
-</div>
-
-<div>
-    <a href="#">Mon compte</a> <span>|</span> <a href="#">Déconnexion</a>
-</div>
-
-<div>
-    <ul>
+    <ul class="div3">
         <li><a href="TP_01.html">Accueil</a></li>
         <li><a href="formulaire.html" target="_blank" >Formulaire</a></li>
         <li><a href="jeux.html" target="_blank">Jeux</a></li>
@@ -34,9 +49,17 @@
     </ul>
 </div>
 
+<hr>
+
+<div class="carrenoir">
+
 <h2>Mon compte</h2>
 
 <span>Vos informations personnelles</span>
+    <hr>
+
+    <div class="liste">
+    <div class="alignement">
 
 <div>
     <label for="Nom">Nom :  </label> <br>
@@ -61,6 +84,9 @@
     </select>
 </div>
 
+       </div>
+
+    <div class="alignement2">
 <div>
     <label for="Email">Email :  </label> <br>
     <input type="text"name="Email" id="Email" placeholder="Votre Email ?">
@@ -81,72 +107,206 @@
     <input type="text" name="Répéter le mot de passe" id="Répéter le mot de passe">
 </div>
 
-<div>
-    <span>
-        Votre formulaire abonnement
-    </span>
+    </div>
+    </div>
+    <br>
+
+    <div class="formulaire">Votre formulaire abonnement</div>
+
+    <hr>
+
+    <table>
+
+        <thead>
+
+        <tr>
+
+            <th></th>
+
+            <th>
+
+                <input type="radio" name="abonnement" id="PreniumPlus">
+
+                <label for="PreniumPlus">Prenium +</label>
+
+            </th>
+
+            <th>
+
+                <input type="radio" name="abonnement" id="Prenium">
+
+                <label for="Prenium">Prenium</label>
+
+            </th>
+
+            <th>
+
+                <input type="radio" name="abonnement" id="Discovery">
+
+                <label for="Discovery">Discovery</label>
+
+            </th>
+
+        </tr>
+
+        </thead>
+
+        <tbody>
+
+        <tr>
+
+            <th>Accès web</th>
+
+            <td>
+
+                <img src="images/icon-ok-32x32.png" alt="bouton Ok">
+
+            </td>
+
+            <td>
+
+                <img src="images/icon-ok-32x32.png" alt="bouton Ok">
+
+            </td>
+
+            <td>
+
+                <img src="images/icon-ok-32x32.png" alt="bouton Ok">
+
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <th>Accès mobile</th>
+
+            <td>
+
+                <img src="images/icon-ok-32x32.png" alt="bouton ok">
+
+            </td>
+
+            <td>
+
+                <img src="images/icon-ok-32x32.png" alt="bouton ok">
+
+            </td>
+
+            <td>
+
+                <img src="images/icon-not-ok-32x32.png" alt="bouton non ok">
+
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <th>
+
+                Ecoute illimité
+
+            </th>
+
+            <td>
+
+                <img src="images/icon-ok-32x32.png" alt="bouton ok">
+
+            </td>
+
+            <td>
+
+                <img src="images/icon-not-ok-32x32.png" alt="bouton non ok">
+
+            </td>
+
+            <td>
+
+                <img src="images/icon-not-ok-32x32.png" alt="bouton non ok">
+
+            </td>
+
+        <tr>
+
+            <th>
+
+                <b>Tarifs</b>
+
+            </th>
+
+
+
+            <td>
+
+                <span>11,99€/mois</span>
+
+            </td>
+
+
+
+            <td>
+
+                <span>5,99€/mois</span>
+
+            </td>
+
+
+
+            <td>
+
+                <span>Gratuit 1 mois</span>
+
+            </td>
+
+        </tr>
+
+        </tbody>
+
+    </table>
+
+    <div class="tab">
+    <tr>
+
+        <th>
+
+        <td colspan="2">
+
+            <input type="checkbox" name="listeDiffusion" id="newsletter">
+
+            <label for="newsletter">Recevoir nos newsletters</label>
+
+        </td>
+
+
+
+        <td colspan="2">
+
+            <input type="checkbox" name="listeDiffusion" id="partenaires">
+
+            <label for="partenaires">Recevoir les newsletters de nos partenaires</label>
+
+        </td>
+
+        </th>
+
+    </tr>
+
 </div>
 
-<div>
+    <div class="annval">
+        <button>Annuler</button>
 
-    <label for="Premium+">Premium+</label>
-    <input type="radio" name="Formule" id="Premium+">
+        <a href="#" class="button glow-button">Valider</a>
+    </div>
 
-    <label for="Premium">Premium</label>
-    <input type="radio" name="Formule" id="Premium">
-
-    <label for="Discovery">Discovery</label>
-    <input type="radio" name="Formule" id="Discovery">
 </div>
 
-<div>
-    <span>
-        Accès web
-    </span>
-    <img src="images/icon-ok-32x32.png" alt="CheckMark">
-    <img src="images/icon-ok-32x32.png" alt="CheckMark">
-    <img src="images/icon-ok-32x32.png" alt="CheckMark">
-</div>
 
-<div>
-    <span>
-        Accès mobile
-    </span>
-    <img src="images/icon-ok-32x32.png" alt="CheckMark">
-    <img src="images/icon-ok-32x32.png" alt="CheckMark">
-    <img src="images/icon-not-ok-32x32.png" alt="CheckMark not ok">
-</div>
 
-<div>
-    <span>
-        Ecoute illimité
-    </span>
-    <img src="images/icon-ok-32x32.png" alt="CheckMark">
-    <img src="images/icon-not-ok-32x32.png" alt="CheckMark not ok">
-    <img src="images/icon-not-ok-32x32.png" alt="CheckMark not ok">
-</div>
+    </div>
 
-<div>
-    <span>
-        Tarifs 11.99E 5.99E Gratuit 1 mois
-    </span>
-</div>
-
-<div>
-    <input type="checkbox" name="Une checkbox" id="Une checkbox">
-    <span>
-        Recevoir nos newsletters
-    </span>
-    <input type="checkbox" name="Une checkbox" id="checkbox">
-    <span>
-        Recevoir les newsletters de nos partenaires
-    </span>
-</div>
-
-<div>
-    <button>Annuler</button>
-    <button>Valider</button>
-</div>
+<hr>
 
 <div>
     <a href="mailto:contact@eni-ecole.fr">ENI ECOLE</a>
@@ -154,6 +314,8 @@
 
 <div>
     <a href="https://www.eni-ecole.fr/"target="_blank">Copyright &copy ENI école Informatique</a>
+</div>
+
 </div>
 
 </body>
