@@ -1,0 +1,43 @@
+
+.taixt{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: white;
+    font-family: "Lucida Console";
+}
+
+.tytre{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: "Lucida Console";
+}
+
+.divclass{
+    display: flex;
+
+}
+
+#map {
+    display: flex;
+    justify-content: center;
+    height: 800px;
+    width: 1050px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.cmap{
+    display: flex;
+    justify-content: center;
+
+}
+
+body{
+
+
+    background: url("images/322884-Sepik.jpg") no-repeat center fixed ;
+    background-size: cover;
+}
+
